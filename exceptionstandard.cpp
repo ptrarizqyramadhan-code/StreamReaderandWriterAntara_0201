@@ -10,4 +10,15 @@ int main() {
         {
             // deklarsasi array data dengan panjang index 3
             array <int , 3> data = {1, 2, 3};
-            
+            // memanggil array element ke-5 yang berarti akan terjadi error
+            cout << data.at(5) << endl;
+        }
+        //kondisi jika terjadi error dalam try
+        catch (exception& e)
+        {
+          
+            cout << e.what() << endl; 
+        }
+    cout << "baris program terkahir" << endl; // penanda 2
+    return 0;
+}
